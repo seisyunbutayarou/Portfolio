@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ドット絵</title>
+</head>
+<body>
+    <!--ファイル入力フォーム-->
+    <input type="file" accept="image/png, image/jpeg" />
+    <div>
+        <label for="number">ピクセルサイズ：</label>
+        <input id="number" type="number" value="4" min="1" max="50">
+        <!--変換ボタン-->
+        <button onclick="create()">変換</button>
+    </div>
+    <!--変換後の画像表示領域-->
+    <div>
+        <canvas>
+            
+        </canvas>
+    </div>
+    <script src="./pixel.js"></script>
+</body>
+</html>

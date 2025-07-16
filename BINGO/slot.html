@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SLOT</title>
+</head>
+<body>
+    <header>
+        <a href="./player.html">BINGOゲーム</a>
+    </header>
+    <label>カードのサイズ：</label>
+    <!--カードサイズの指定-->
+    <input type="number" min="3" max="101" step="2" value="5">
+    <!--数を生成-->
+    <input type="button" value="数を生成" onclick="createnumber()">
+    <input type="button" value="数をリセット" onclick="resetcard()">
+    <div></div>
+</body>
+<script src="./slot.js"></script>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BINGO</title>
+  <link rel="stylesheet" href="./player.css">
+  <style>
+    td {
+      width: 2vw;
+      user-select: none;        /* 選択禁止（モダンブラウザ） */
+      -webkit-user-select: none; /* Safari対応 */
+      -moz-user-select: none;    /* Firefox対応 */
+    }
+  </style>
+  
+</head>
+<body onload="createcard()">
+  <header><a href="./slot.html">ルーレット</a></header>
+  <div class="a">
+    <div class="b">100マスBINGO</div>
+    <!--BINGOカード-->
+    <div class="c">
+      <table id="card">
+    
+      </table>
+    </div>
+  </div>
+  <label>カードのサイズ：</label>
+  <!--カードサイズの指定-->
+  <input type="number" min="1" max="101" step="2" value="5">
+  <!--カードの生成-->
+  <input id="press" type="button" value="新しいカードを生成" onclick="createcard()">
+  <!--カードのリセット-->
+  <input id="press" type="button" value="カードをリセット" onclick="resetcard()">
+
+</body>
+<script src="./player.js"></script>
+    
+</html>
